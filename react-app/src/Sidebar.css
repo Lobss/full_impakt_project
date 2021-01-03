@@ -1,0 +1,121 @@
+.side-nav{
+  height: 700px;
+  
+  border-left: 1px solid;
+  border-radius: 0;
+  border-color: #f07c34;;
+  background-color: transparent;
+}
+
+.side-bar {
+    background: '#EEE';
+    transition: 'width';
+    overflow: 'hidden';
+    transition: 0.8s ease; 
+}
+
+/* #logo {
+  width: 150; 
+  height: 80; 
+  position:"relative";
+  display:"flex";
+  align-items: "center";
+  justify-content:"center"
+} */
+
+#menu-vertical {
+  padding-inline-start: 0;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  top:60px
+
+}
+
+#menu-vertical ul {
+  list-style: none;
+  text-align: center;
+}
+
+#menu-vertical li {
+  display: block;
+  align-items: center;
+  position: relative;
+  margin-left: 30px;
+  background-color:transparent; 
+  /* background-image:-webkit-linear-gradient(top, #729EBF 0%, white 100%); */
+  /* background-image: linear-gradient(to bottom, #729EBF 0%, white 100%); */
+  border-radius: 20px;
+  margin-bottom:25px;
+  /* box-shadow: 2px 2px 2px #999; */
+  width: 200px;
+  /* border:solid 1px #333A40; */
+}
+
+#menu-vertical li li {
+  max-height:0;
+  overflow: hidden;
+  transition: all 1s;
+  background: transparent;
+  box-shadow: none;
+  border:none;
+  margin:0
+}
+
+#menu-vertical a {
+  display:flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 8px 0;
+  font-size:1.1em;
+  
+}
+
+#menu-vertical li a:hover {
+  color: #f07c34;
+}
+
+#menu-vertical ul li a, #menu-vertical li:hover li a {
+  font-size: 0.8em;
+
+}
+#menu-vertical li:hover {
+  box-shadow: 0px 1px 0px #f07c34;
+}
+
+#menu-vertical li li:hover {
+  background: transparent;
+}
+
+#menu-vertical ul li:last-child {
+  display:flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border:none;
+}
+
+#menu-vertical li:hover li {
+  max-height: 15em;
+  box-shadow: none;
+}
+
+.sub-menu {
+ margin-left: -90px;
+ cursor: pointer;
+}
+
+#menu-vertical footer {
+  font-size: 10px;
+  color: grey;
+  position: absolute;
+  right: 20px;
+  top: 480px;
+  
+}
+
+
+
