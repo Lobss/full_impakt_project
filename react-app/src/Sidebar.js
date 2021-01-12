@@ -47,7 +47,6 @@ export default function Sidebar({
               </a>
             </li>
 
-
             {
               vv3 &&
               <li className="border__shadow">

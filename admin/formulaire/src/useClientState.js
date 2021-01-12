@@ -8,7 +8,7 @@ export default initialValue => {
   const fetchClients = () => {
     setState('loading')
 
-    const data = axios.get('http://localhost:8888/impakt/admin/api/client/lire.php');
+    const data = axios.get('http://best-videos360.com/api/client/lire.php');
 
     data.then(function (response) {
       setClients(response.data.client)
@@ -30,7 +30,7 @@ export default initialValue => {
    
     axios({
       method: 'POST',
-      url: 'http://localhost:8888/impakt/admin/api/client/creer.php',
+      url: 'http://best-videos360.com/api/client/creer.php',
       data: client
     })
     .then(response => {
@@ -40,10 +40,10 @@ export default initialValue => {
       
     })
   }
-
+  
   const deleteClient = (clientId) => {
 
-    axios.delete(`http://localhost:8888/impakt/admin/api/client/supprimer.php`, {data: {id: clientId} })
+    axios.delete(`http://best-videos360.com/api/client/supprimer.php`, {data: {id: clientId} })
       .then(() => {
         fetchClients()
       })

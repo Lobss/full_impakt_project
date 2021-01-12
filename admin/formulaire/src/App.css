@@ -1,16 +1,23 @@
 #formulair {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
+    margin: 10px;
 
 }
 
 #formulair div {
-    display: block;
-    flex-direction: column;
+    display: flex;  
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-left: 5px;
+    
 }
 
-#formulair label {
+/* #formulair label {
     margin-left: 30px;
+} */
+
+.field {
+    width: 25ch;
 }

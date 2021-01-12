@@ -6,15 +6,6 @@ import Canvas from './Canvas'
 import { Twirl as Hamburger } from 'hamburger-react';
 import axios from 'axios';
 
-const fakeClient = {
-    id:1,
-    name: "ok",
-    logo:'joli',
-    accueil:'https://s3.eu-west-1.amazonaws.com/media.habiteo.com/models/z/zwP5R4LUk6lCQM0ZZGepu/general/0001.jpg',
-    vv3: 'https://my.matterport.com/show/?m=hcUyyRZdc3R',
-    vg:'https://www.google.com/maps/embed?pb=!4v1606412256100!6m8!1m7!1sCAoSLEFGMVFpcE1VdTQyVlgyTTkxOTZscnBmSmRmcHQyVHZlY1oybW9fY2RTM3Fm!2m2!1d43.57922427528444!2d3.949080672525156!3f191.53!4f-5.989999999999995!5f0.7820865974627469',
-    v360:'qbvUgxWLnkY'
-}
 
 console.log(window.location)
 const params =  new URLSearchParams(window.location.search);
@@ -27,7 +18,7 @@ export default function Container() {
     const [canvas, setCanvas] = React.useState({type:"iframe", ressource:client.accueil})
 
     const fetchClient = () => {
-        axios.get('http://localhost:8888/impakt/admin/api/client/lire_un.php', {params:{clientId: clientId}})
+        axios.get('http://best-videos360.com/api/client/lire_un.php', {params:{clientId: clientId}})
 
             .then(response => {
                 console.log(response);
@@ -64,11 +55,11 @@ export default function Container() {
                 accueil={client.accueil} 
                 accueilLabel={client.accueil_label}  
                 vv3={client.vv3}
-                vv3Label={client.vv3Label} 
+                vv3Label={client.vv3_label} 
                 vg={client.vg} 
-                vgLabel={client.vgLabel}
+                vgLabel={client.vg_label}
                 v360={client.v360}
-                v360Label={client.vgLabel} 
+                v360Label={client.v360_label} 
             />
         </div>
     )
