@@ -19,8 +19,6 @@ export default function Sidebar({
 
 }) {
 
-  console.log(accueilLabel);
-
   return (
     <div className="side-nav" style={{ position: 'relative' }}>
 

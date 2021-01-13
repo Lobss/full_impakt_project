@@ -8,6 +8,7 @@ html, body {
     position: relative;
     flex-direction: row;
     height: 800px;
+    overflow: hidden;
     /* height: calc(var(--vh, 1vh)*100); */
 }
 

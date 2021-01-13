@@ -13,9 +13,6 @@ export default class Nav extends React.Component {
         document.getElementById("mySidenav").style.width = "0";
     }
 
-
-
-
     render() {
 
         const style1 = {

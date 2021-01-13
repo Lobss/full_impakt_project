@@ -15,14 +15,15 @@ export default function Container() {
     console.log(clientId);
     const [client, setClient] = React.useState({});
     const [isOpen, setIsOpen] = React.useState(false);
-    const [canvas, setCanvas] = React.useState({type:"iframe", ressource:client.accueil})
+    const [canvas, setCanvas] = React.useState({});
 
     const fetchClient = () => {
         axios.get('http://best-videos360.com/api/client/lire_un.php', {params:{clientId: clientId}})
 
             .then(response => {
-                console.log(response);
-                setClient(response.data)
+                const client = response.data;
+                setClient(client)
+                setCanvas({type:"iframe", ressource:client.accueil})
             })
     }
 

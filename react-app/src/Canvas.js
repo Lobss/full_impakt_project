@@ -2,12 +2,8 @@ import React, { useState } from 'react';
 import Iframe from 'react-iframe';
 import YouTube from 'react-youtube';
 
-export default function Canvas({basicUrl, canvas}) {
+export default function Canvas({canvas}) {
 
-
-
-   {console.log(basicUrl);
-   }
     return (
         <div style={{ padding: 0, flex: '1 1 auto', background: 'transparent', color: 'white' }}>
 
