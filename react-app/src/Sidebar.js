@@ -133,7 +133,7 @@ export default function Sidebar({
               </a>
             </li> */}
             <footer>
-              @impakt 360
+              © Impakt 360
             </footer>
           </ul>
 

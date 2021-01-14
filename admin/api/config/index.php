@@ -1,10 +1,10 @@
 <?php
 class Database{
     // Connexion à la base de données
-    private $host = "db5001428431.hosting-data.io";
-    private $db_name = "dbs1203945";
-    private $username = "dbu732488";
-    private $password = "s@tXeAQ4Un88v32";
+    private $host = "";
+    private $db_name = "";
+    private $username = "";
+    private $password = "";
     public $connexion;
 
     // getter pour la connexion
